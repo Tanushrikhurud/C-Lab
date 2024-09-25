@@ -1,0 +1,39 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class student{
+  public:
+  //Properties(data members)
+  string name;
+  int rollnumber;
+  int age;
+  
+  //Function to dis[lay student information
+  void displayInfo(){
+    cout<<"Name;"<<name<<endl;
+    cout<<"Roll Number."<<rollnumber<<endl;
+    cout<<"Age:"<<age<<endl;
+}
+};
+
+int main(){
+  //Create object(instances)of the student class
+  student s1;
+  student s2;
+  
+  //Set properties for student1
+  s1.name = "Alice";
+  s1.rollnumber=101;
+  s1.age=20;
+  
+  //Set properties for student2
+  s2.name="Bob";
+  s2.rollnumber=102;
+  s2.age=22;
+  
+  //Display information for each student
+  cout<<"s1 Information."<<endl;
+  
+  return 0;
+}
